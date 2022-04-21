@@ -4,10 +4,10 @@ import cv2
 
 labels = {
     # Void has label 0
-    'line_note': ([100, 100, 100], [125, 200, 255]), # 1
-    # 'gap_note':([1, 0, 100], [255, 255, 255]) # THIS ONE IS IMPOSSIBLE BRUH
-    'quarter_rest': ([89, 0, 0], [90, 255, 255]), # 2
-    'clef': ([100, 220, 100], [125, 255, 255]) # 3
+    'line_note': ([100, 100, 200], [125, 150, 255]), # 1
+    'quarter_rest': ([89, 150, 200], [90, 200, 255]), # 2
+    'clef': ([100, 220, 200], [125, 255, 255]), # 3
+    'gap_note':([0, 230, 50], [10, 255, 75]) # 4
 }
 
 # Void, note, rest
@@ -30,7 +30,7 @@ def filter(filename):
         mask = cv2.inRange(hsv, lower, upper)
         
         # Use for debugging
-        # cv2.imwrite("result" + str(label) + ".png", mask)
+        cv2.imwrite("result" + str(label) + ".png", mask)
         
 
         # add in the label for the corresponding object
