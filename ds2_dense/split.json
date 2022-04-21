@@ -1,0 +1,43 @@
+{
+    "train": [
+        [
+            "lg-2267728-aug-emmentaler--page-2.png",
+            "lg-2267728-aug-emmentaler--page-2_seg.png",
+            "lg-2267728-aug-emmentaler--page-2_seg.png.npy"
+        ],
+        [
+            "lg-3948783-aug-gonville--page-1.png",
+            "lg-3948783-aug-gonville--page-1_seg.png",
+            "lg-3948783-aug-gonville--page-1_seg.png.npy"
+        ],
+        [
+            "lg-3948783-aug-emmentaler--page-1.png",
+            "lg-3948783-aug-emmentaler--page-1_seg.png",
+            "lg-3948783-aug-emmentaler--page-1_seg.png.npy"
+        ],
+        [
+            "lg-3948783-aug-lilyjazz--page-1.png",
+            "lg-3948783-aug-lilyjazz--page-1_seg.png",
+            "lg-3948783-aug-lilyjazz--page-1_seg.png.npy"
+        ],
+        [
+            "lg-2267728-aug-beethoven--page-2.png",
+            "lg-2267728-aug-beethoven--page-2_seg.png",
+            "lg-2267728-aug-beethoven--page-2_seg.png.npy"
+        ]
+    ],
+    "validation": [
+        [
+            "lg-3948783-aug-beethoven--page-1.png",
+            "lg-3948783-aug-beethoven--page-1_seg.png",
+            "lg-3948783-aug-beethoven--page-1_seg.png.npy"
+        ]
+    ],
+    "test": [
+        [
+            "lg-2267728-aug-gutenberg1939--page-2.png",
+            "lg-2267728-aug-gutenberg1939--page-2_seg.png",
+            "lg-2267728-aug-gutenberg1939--page-2_seg.png.npy"
+        ]
+    ]
+}

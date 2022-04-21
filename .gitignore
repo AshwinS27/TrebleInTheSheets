@@ -1,5 +1,8 @@
-*.json
+deepscores_test.json
+deepscores_train.json
 images/
 instance/
 segmentation/
 MSRC_ObjCategImageDatabase_v2/*
+.ipynb_checkpoints/*
+.DS_Store
