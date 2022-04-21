@@ -1,5 +1,0 @@
-void: void
-plants: grass, tree, flower
-animal: cow, horse, sheep, bird, cat, dog, face, body
-nature: sky, mountain, water
-Human-made: building, sign, book, chair, road, aeroplane, car, bicycle, boat
