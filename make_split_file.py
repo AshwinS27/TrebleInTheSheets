@@ -3,12 +3,12 @@ import json
 import numpy as np
 
 ###### META VARIABLES #####
-NUM_TRAIN = 5
-NUM_VALID = 1
-NUM_TEST = 1
+NUM_TRAIN = 50#1275
+NUM_VALID = 20#340
+NUM_TEST = 10#50
 ###########################
 
-path_to_images = './ds2_dense/images_small/'
+path_to_images = './ds2_dense/images/'
 
 # get image names
 image_names = []

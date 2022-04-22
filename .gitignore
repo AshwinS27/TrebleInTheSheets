@@ -6,3 +6,6 @@ segmentation/
 MSRC_ObjCategImageDatabase_v2/*
 .ipynb_checkpoints/*
 .DS_Store
+ds2_dense/pre_filters/*
+ds2_dense/GT_Quantize/*
+ds2_dense/GroundTruth/*
