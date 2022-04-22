@@ -30,7 +30,7 @@ def filter(filename):
         mask = cv2.inRange(hsv, lower, upper)
         
         # Use for debugging
-        cv2.imwrite("result" + str(label) + ".png", mask)
+        # cv2.imwrite("result" + str(label) + ".png", mask)
         
 
         # add in the label for the corresponding object
