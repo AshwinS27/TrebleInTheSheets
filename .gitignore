@@ -2,3 +2,5 @@
 images/
 instance/
 segmentation/
+vert_scan/
+*.DS_Store
