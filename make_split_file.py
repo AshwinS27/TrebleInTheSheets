@@ -3,9 +3,11 @@ import json
 import numpy as np
 
 ###### META VARIABLES #####
-NUM_TRAIN = 50#1275
-NUM_VALID = 20#340
-NUM_TEST = 10#50
+TOTAL_IMAGES = 200
+
+NUM_TRAIN = TOTAL_IMAGES * 0.8 *0.8#1275
+NUM_VALID = TOTAL_IMAGES * 0.8 *0.2 #340
+NUM_TEST = TOTAL_IMAGES * 0.2 #50
 ###########################
 
 path_to_images = './ds2_dense/images/'
