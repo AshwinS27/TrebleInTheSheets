@@ -23,6 +23,18 @@ def verticalScan(filename):
 def findFirstStaff(startRow, lines):
     #keep going 20 pixels up, if there is black, need to go 20 pixels up and add 1
     #lines = cv2.bitwise_not(lines)
+    distBetweenLines = lines.shape[0]
+    lineSep = 0
+    for row in lines:
+        #print(row)
+        if (row[0] == 255):
+            if (lineSep < distBetweenLines and lineSep > 3):
+                distBetweenLines = lineSep
+            lineSep = 0
+        else:
+            lineSep += 1
+    print("DistLines", distBetweenLines)
+    distBetweenLines += 5 #For margin purposes
     lineNum = 0
     pixelsGoneOn = 0
     for i in range(120):
@@ -32,7 +44,7 @@ def findFirstStaff(startRow, lines):
             pixelsGoneOn = 0
         else:
             pixelsGoneOn += 1
-        if (pixelsGoneOn > 20):
+        if (pixelsGoneOn > distBetweenLines):
             #We are have passed first line
             return lineNum
 
@@ -48,7 +60,8 @@ def identifyStaffLine(img1, img2):
     listOfCoordinates= list(zip(result[0], result[1]))
     row = np.unique(result[0])
     print(row)
-    print("LineNum:",findFirstStaff(row[5],img2))
+    for ind in row:
+        print("LineNum:",ind, findFirstStaff(ind,img2))
     #print(listOfCoordinates)
 
     print(cv2.imwrite("Bitwise_and.png", bw_and))
